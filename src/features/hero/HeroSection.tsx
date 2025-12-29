@@ -1,21 +1,19 @@
 import { Button } from '@/shared/components/ui'
 import { Isotipo } from '@/shared/components/Isotipo'
+import { Clock, CreditCard, MessageCircle } from 'lucide-react'
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-black" aria-label="Hero">
       {/* Background Effects */}
       <div className="pointer-events-none absolute inset-0">
-        {/* Radial gradient top */}
         <div 
           className="absolute inset-0"
           style={{
-            background: 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.12), transparent 60%)'
+            background: 'radial-gradient(ellipse 80% 50% at 50% -20%, rgba(59, 130, 246, 0.08), transparent 60%)'
           }}
           aria-hidden="true"
         />
-        {/* Subtle noise texture */}
-        <div className="bg-noise absolute inset-0" aria-hidden="true" />
       </div>
 
       {/* Main Content */}
@@ -34,59 +32,53 @@ export function HeroSection() {
 
             {/* Main Heading */}
             <h1 className="mb-6 text-5xl font-bold leading-[1.05] tracking-tight text-white opacity-0 animate-fade-in-up delay-100 sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-              Gestion
-
-              <span className="text-gradient-primary">Digital</span>
+              Gestion 
+<span className="text-gradient-primary">Digital</span>
             </h1>
 
             {/* Description */}
-            <p className="mb-10 max-w-lg text-lg leading-relaxed text-neutral-400 opacity-0 animate-fade-in-up delay-200 md:text-xl">
-              Software comercial que transforma la complejidad en claridad. 
-              Facturacion, inventario y CRM en una plataforma unificada.
+            <p className="mb-10 max-w-md text-base leading-relaxed text-neutral-400 opacity-0 animate-fade-in-up delay-200">
+              Software comercial que transforma la complejidad en claridad. Facturación, inventario y CRM en una plataforma unificada.
             </p>
 
             {/* CTA */}
-            <div className="flex flex-col gap-4 opacity-0 animate-fade-in-up delay-300 sm:flex-row sm:items-center sm:gap-6">
-              <Button variant="primary" size="lg" className="btn-glow">
+            <div className="opacity-0 animate-fade-in-up delay-300">
+              <Button variant="primary" size="lg" className="btn-glow w-fit">
                 Comenzar gratis
               </Button>
-              <span className="text-sm text-neutral-500">
-                Sin tarjeta de credito
-              </span>
             </div>
           </div>
 
           {/* Right Column - Isotipo */}
-          <div className="relative hidden lg:flex lg:items-center lg:justify-end lg:pr-8 xl:pr-0">
-            {/* Glow effect */}
-            <div 
-              className="pointer-events-none absolute h-[500px] w-[500px] animate-pulse-glow translate-x-12"
-              style={{
-                background: 'radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(139, 92, 246, 0.1) 40%, transparent 70%)',
-                filter: 'blur(60px)'
-              }}
-              aria-hidden="true"
-            />
-            
+          <div className="relative hidden lg:flex lg:items-center lg:justify-end lg:pr-8 xl:pr-0">            
             {/* Isotipo with float animation */}
             <div className="relative z-10 opacity-0 animate-scale-in delay-400 translate-x-8 xl:translate-x-16">
               <Isotipo 
-                className="h-[340px] w-[340px] xl:h-[400px] xl:w-[400px] drop-shadow-2xl" 
+                className="h-[340px] w-[340px] xl:h-[400px] xl:w-[400px]" 
                 animate 
               />
             </div>
           </div>
         </div>
+        
+        {/* Benefits - Bottom Centered */}
+        <div className="absolute bottom-12 left-1/2 -translate-x-1/2">
+          <div className="flex items-center gap-8 text-sm text-neutral-400 opacity-0 animate-fade-in-up delay-500">
+            <span className="flex items-center gap-2">
+              <Clock className="h-4 w-4" aria-hidden="true" />
+              Setup en 5 minutos
+            </span>
+            <span className="flex items-center gap-2">
+              <CreditCard className="h-4 w-4" aria-hidden="true" />
+              Sin tarjeta de crédito
+            </span>
+            <span className="flex items-center gap-2">
+              <MessageCircle className="h-4 w-4" aria-hidden="true" />
+              Soporte en español
+            </span>
+          </div>
+        </div>
       </div>
-
-      {/* Bottom gradient fade */}
-      <div 
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-32"
-        style={{
-          background: 'linear-gradient(to top, #000, transparent)'
-        }}
-        aria-hidden="true"
-      />
     </section>
   )
 }

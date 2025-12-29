@@ -29,13 +29,10 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative bg-neutral-950 py-32 md:py-40"
+      className="relative bg-black py-32 md:py-40"
       aria-labelledby="testimonials-title"
     >
-      {/* Divider top */}
-      <div className="divider-gradient absolute left-0 right-0 top-0" aria-hidden="true" />
-
-      <div className="container-custom relative">
+      <div className="container-custom">
         {/* Section Header */}
         <div className="mx-auto mb-20 max-w-2xl text-center">
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary-500">
@@ -81,9 +78,6 @@ export function TestimonialsSection() {
           ))}
         </div>
       </div>
-
-      {/* Divider bottom */}
-      <div className="divider-gradient absolute bottom-0 left-0 right-0" aria-hidden="true" />
     </section>
   )
 }

@@ -46,12 +46,7 @@ export function FeaturesSection() {
       className="relative bg-black py-32 md:py-40"
       aria-labelledby="features-title"
     >
-      {/* Background */}
-      <div className="pointer-events-none absolute inset-0">
-        <div className="bg-noise absolute inset-0" aria-hidden="true" />
-      </div>
-
-      <div className="container-custom relative">
+      <div className="container-custom">
         {/* Section Header */}
         <div className="mx-auto mb-20 max-w-2xl text-center">
           <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary-500">

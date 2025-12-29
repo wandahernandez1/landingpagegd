@@ -7,16 +7,7 @@ export function CtaSection() {
       className="relative overflow-hidden bg-black py-32 md:py-40"
       aria-labelledby="cta-title"
     >
-      {/* Background gradient */}
-      <div 
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background: 'radial-gradient(ellipse 60% 50% at 50% 100%, rgba(59, 130, 246, 0.12), transparent 60%)'
-        }}
-        aria-hidden="true"
-      />
-
-      <div className="container-custom relative">
+      <div className="container-custom">
         <div className="mx-auto max-w-3xl text-center">
           {/* Badge */}
           <div className="mb-8">
