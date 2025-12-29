@@ -14,7 +14,7 @@ export function getFrameUrl(index: number): string {
 }
 
 export const COMPANY = {
-  name: "Gestion Digital",
+  name: "Gestión Digital",
   tagline: "Software Comercial",
   year: 2025,
 } as const;
