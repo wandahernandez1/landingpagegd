@@ -34,7 +34,7 @@ const FEATURES = [
   {
     id: 'support',
     title: 'Soporte 24/7',
-    description: 'Equipo experto en espanol disponible cuando lo necesites.',
+    description: 'Equipo experto en español disponible cuando lo necesites.',
     icon: Clock,
   },
 ]

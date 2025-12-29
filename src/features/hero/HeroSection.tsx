@@ -25,7 +25,6 @@ export function HeroSection() {
             {/* Tagline */}
             <div className="mb-8 opacity-0 animate-fade-in-up">
               <span className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5 text-xs font-medium tracking-wide text-neutral-400">
-                <span className="h-1.5 w-1.5 rounded-full bg-primary-500 animate-pulse" />
                 La simplicidad que funciona
               </span>
             </div>
@@ -46,17 +45,6 @@ export function HeroSection() {
               <Button variant="primary" size="lg" className="btn-glow w-fit">
                 Comenzar gratis
               </Button>
-            </div>
-          </div>
-
-          {/* Right Column - Isotipo */}
-          <div className="relative hidden lg:flex lg:items-center lg:justify-end lg:pr-8 xl:pr-0">            
-            {/* Isotipo with float animation */}
-            <div className="relative z-10 opacity-0 animate-scale-in delay-400 translate-x-8 xl:translate-x-16">
-              <Isotipo 
-                className="h-[340px] w-[340px] xl:h-[400px] xl:w-[400px]" 
-                animate 
-              />
             </div>
           </div>
         </div>
