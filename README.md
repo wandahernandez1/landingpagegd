@@ -2,7 +2,7 @@
 
 Landing page moderna y optimizada, diseñada para maximizar la conversión y ofrecer una experiencia de usuario fluida. Construida con una arquitectura escalable y las mejores prácticas de desarrollo frontend.
 
-## ��� Stack Tecnológico
+## 🛠 Stack Tecnológico
 
 - **Core:** React 18, TypeScript, Vite
 - **Estilos:** Tailwind CSS
@@ -11,7 +11,7 @@ Landing page moderna y optimizada, diseñada para maximizar la conversión y ofr
 - **Scroll:** Lenis (Smooth Scroll)
 - **Calidad de Código:** ESLint, Prettier
 
-## ��� Arquitectura del Proyecto
+## 📂 Arquitectura del Proyecto
 
 El proyecto sigue una arquitectura basada en **Features** para garantizar escalabilidad y mantenibilidad:
 
@@ -38,20 +38,23 @@ src/
 - **Diseño Responsivo:** Adaptabilidad total a móviles, tablets y escritorio.
 - **Smooth Experience:** Scroll suave con Lenis y efectos de parallax optimizados.
 
-## ���️ Instalación y Desarrollo
+## 🚀 Instalación y Desarrollo
 
 1. **Clonar el repositorio**
+
    ```bash
    git clone https://github.com/wandahernandez1/landingpagegd.git
    cd landingpagegd
    ```
 
 2. **Instalar dependencias**
+
    ```bash
    npm install
    ```
 
 3. **Iniciar servidor de desarrollo**
+
    ```bash
    npm run dev
    ```
@@ -61,9 +64,10 @@ src/
    npm run build
    ```
 
-## ��� Contribución
+## 🤝 Contribución
 
 Este proyecto sigue principios de **Clean Code** y **SOLID**. Cada PR debe mantener la calidad del código, asegurar la accesibilidad y no degradar la performance.
 
 ---
+
 © 2025 LandingPageGD. Todos los derechos reservados.
