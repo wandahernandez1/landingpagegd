@@ -1,5 +1,4 @@
 import { Button } from '@/shared/components/ui'
-import { Isotipo } from '@/shared/components/Isotipo'
 import { Clock, CreditCard, MessageCircle } from 'lucide-react'
 
 export function HeroSection() {
@@ -30,9 +29,8 @@ export function HeroSection() {
             </div>
 
             {/* Main Heading */}
-            <h1 className="mb-6 text-5xl font-bold leading-[1.05] tracking-tight text-white opacity-0 animate-fade-in-up delay-100 sm:text-6xl md:text-7xl lg:text-[5.5rem]">
-              Gestion 
-<span className="text-gradient-primary">Digital</span>
+            <h1 className="mb-6 text-4xl font-bold leading-[1.05] tracking-tight text-white opacity-0 animate-fade-in-up delay-100 sm:text-5xl md:text-6xl lg:text-7xl">
+              Gestion <span className="text-gradient-primary">Digital</span>
             </h1>
 
             {/* Description */}
