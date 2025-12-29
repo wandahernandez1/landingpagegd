@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# LandingPageGD - High Conversion Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page moderna y optimizada, diseñada para maximizar la conversión y ofrecer una experiencia de usuario fluida. Construida con una arquitectura escalable y las mejores prácticas de desarrollo frontend.
 
-Currently, two official plugins are available:
+## 🚀 Stack Tecnológico
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Core:** React 18, TypeScript, Vite
+- **Estilos:** Tailwind CSS
+- **UI Components:** Shadcn/ui (Radix UI)
+- **Animaciones & Efectos:** CSS Modules, Parallax custom hooks
+- **Scroll:** Lenis (Smooth Scroll)
+- **Calidad de Código:** ESLint, Prettier
 
-## React Compiler
+## 🏗 Arquitectura del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El proyecto sigue una arquitectura basada en **Features** para garantizar escalabilidad y mantenibilidad:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── features/           # Módulos de negocio independientes
+│   ├── cta/            # Sección de Call to Action
+│   ├── features/       # Sección de características
+│   ├── hero/           # Sección principal (Hero)
+│   └── testimonials/   # Sección de prueba social
+├── shared/             # Código reutilizable
+│   ├── components/     # Componentes UI base (Botones, Cards, Logos)
+│   ├── hooks/          # Hooks personalizados (useLenis, useParallaxFrames)
+│   └── utils/          # Utilidades y helpers (cn, etc.)
+├── layouts/            # Estructura global (Navbar, Footer)
+└── assets/             # Recursos estáticos
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Características Clave
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Performance First:** Optimización de Core Web Vitals y carga rápida.
+- **SEO Friendly:** Estructura semántica HTML5 y jerarquía de encabezados correcta.
+- **Accesibilidad (a11y):** Componentes diseñados para ser accesibles y navegables.
+- **Diseño Responsivo:** Adaptabilidad total a móviles, tablets y escritorio.
+- **Smooth Experience:** Scroll suave con Lenis y efectos de parallax optimizados.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Instalación y Desarrollo
+
+1. **Clonar el repositorio**
+   ```bash
+   git clone https://github.com/wandahernandez1/landingpagegd.git
+   cd landingpagegd
+   ```
+
+2. **Instalar dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Iniciar servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+4. **Construir para producción**
+   ```bash
+   npm run build
+   ```
+
+## 🤝 Contribución
+
+Este proyecto sigue principios de **Clean Code** y **SOLID**. Cada PR debe mantener la calidad del código, asegurar la accesibilidad y no degradar la performance.
+
+---
+© 2025 LandingPageGD. Todos los derechos reservados.
