@@ -3,7 +3,6 @@ import { Navbar, Footer } from '@/layouts'
 import { HeroSection } from '@/features/hero'
 import { FeaturesSection } from '@/features/features'
 import { TestimonialsSection } from '@/features/testimonials'
-import { PricingSection } from '@/features/pricing'
 import { CtaSection } from '@/features/cta'
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
         <HeroSection />
         <FeaturesSection />
         <TestimonialsSection />
-        <PricingSection />
         <CtaSection />
       </main>
       <Footer />
