@@ -56,10 +56,10 @@ export function FeaturesSection() {
             id="features-title"
             className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Todo lo que necesitas.
+            Todo lo que necesitas
           </h2>
           <span className="mt-2 text-4xl font-bold tracking-tight text-neutral-500 sm:text-5xl md:text-6xl lg:text-7xl">
-            Nada que no.
+            Nada que no
           </span>
         </header>
 
