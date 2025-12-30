@@ -129,14 +129,14 @@ export function CtaSection() {
 
   return (
     <section
-      className="relative overflow-hidden bg-black py-32 md:py-40 lg:py-48"
+      className="relative overflow-hidden bg-black py-40 md:py-48 lg:py-56"
       aria-labelledby="cta-title"
     >
       <div className="container-custom">
-        <div className="mx-auto max-w-3xl text-center lg:max-w-4xl">
+        <div className="mx-auto max-w-4xl text-center lg:max-w-5xl">
           {/* Badge */}
-          <div className="mb-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-4 py-1.5 text-xs font-medium tracking-wide text-neutral-400 md:text-sm">
+          <div className="mb-10">
+            <span className="inline-flex items-center gap-2 rounded-full border border-neutral-800 bg-neutral-900/50 px-5 py-2 text-sm font-medium tracking-wide text-neutral-400 md:text-base">
               Comienza hoy
             </span>
           </div>
@@ -145,7 +145,7 @@ export function CtaSection() {
           <h2
             ref={headingRef}
             id="cta-title"
-            className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            className="mb-8 text-5xl font-bold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl"
           >
             Simplifica tu gestion.
             <br />
@@ -153,19 +153,19 @@ export function CtaSection() {
           </h2>
 
           {/* Description */}
-          <p className="mx-auto mb-12 max-w-xl text-base text-neutral-400 md:text-lg lg:max-w-2xl lg:text-xl">
+          <p className="mx-auto mb-14 max-w-2xl text-lg text-neutral-400 md:text-xl lg:max-w-3xl lg:text-2xl">
             Unete a miles de empresas que ya transformaron su operacion 
             con Gestion Digital.
           </p>
 
           {/* CTA */}
-          <div className="flex flex-col items-center gap-6">
-            <Button variant="primary" size="lg" className="btn-glow group gap-3 px-8 text-base md:text-lg">
+          <div className="flex flex-col items-center gap-7">
+            <Button variant="primary" size="lg" className="btn-glow group gap-3 px-10 py-4 text-lg md:px-12 md:text-xl">
               Comenzar gratis
-              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              <ArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </Button>
             
-            <p className="text-sm text-neutral-600 md:text-base">
+            <p className="text-base text-neutral-600 md:text-lg">
               30 dias gratis • Sin tarjeta • Cancela cuando quieras
             </p>
           </div>
